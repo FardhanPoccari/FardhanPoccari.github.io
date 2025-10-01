@@ -42,70 +42,161 @@
 </nav>
 
 
-  <!-- Highlight Koleksi -->
-  <section class="container mx-auto py-24 px-6">
-    <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Koleksi Batik Pilihan</h2>
+<!-- Highlight Koleksi -->
+<section class="container mx-auto py-24 px-6">
+  <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Koleksi Batik Pilihan</h2>
 
-    <!-- Grid (responsif) -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      
-      <!-- Model 1 -->
-      <div class="shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
-        <a href="produk.html">
-          <img src="Batik-Mega-Mendung.webp" class="w-full h-64 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-semibold text-yellow-700">Batik Mega Mendung</h3>
-            <p class="text-gray-600 text-sm mt-2">Melambangkan kekuatan, keberanian, serta keselamatan dari bencana alam.</p>
-          </div>
-        </a>
+  <!-- Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- Model 1 -->
+    <div onclick="openModal('mega')" class="cursor-pointer shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
+      <img src="assets/Batik-Mega-Mendung.webp" class="w-full h-64 object-cover object-[center_40%]">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-yellow-700">Batik Mega Mendung</h3>
+        <p class="text-gray-600 text-sm mt-2">Melambangkan kekuatan, keberanian, serta keselamatan dari bencana alam.</p>
       </div>
-
-      <!-- Model 2 -->
-      <div class="shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
-        <a href="produk.html">
-          <img src="Batik-Sekar-Jagad.jpg" class="w-full h-64 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-semibold text-yellow-700">Batik Jagad</h3>
-            <p class="text-gray-600 text-sm mt-2">Menggambarkan keindahan alam dan kehidupan di jagad ini, penuh keseimbangan dan kedamaian.</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- Model 3 -->
-      <div class="shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
-        <a href="produk.html">
-          <img src="Batik-Tambal.jpg" class="w-full h-64 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-semibold text-yellow-700">Batik Tambal</h3>
-            <p class="text-gray-600 text-sm mt-2">Melambangkan keragaman dan kebersamaan dalam kehidupan masyarakat.</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- Model 4 -->
-      <div class="shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
-        <a href="produk.html">
-          <img src="filosofi_batik_kawung.jpg" class="w-full h-64 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-semibold text-yellow-700">Batik Kawung</h3>
-            <p class="text-gray-600 text-sm mt-2">Melambangkan kekuasaan, kesucian, serta keseimbangan dalam hidup.</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- Model 5 -->
-      <div class="shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
-        <a href="produk.html">
-          <img src="Batik-lereng.jpg" class="w-full h-64 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-semibold text-yellow-700">Batik Lereng</h3>
-            <p class="text-gray-600 text-sm mt-2">Menggambarkan kemegahan dan keanggunan, terinspirasi oleh alam seperti gunung dan sungai.</p>
-          </div>
-        </a>
-      </div>
-
     </div>
-  </section>
+
+    <!-- Model 2 -->
+    <div onclick="openModal('jagad')" class="cursor-pointer shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
+      <img src="assets/Batik-Sekar-Jagad.jpg" class="w-full h-64 object-cover object-[center_60%]">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-yellow-700">Batik Jagad</h3>
+        <p class="text-gray-600 text-sm mt-2">Menggambarkan keindahan alam dan kehidupan di jagad ini, penuh keseimbangan dan kedamaian.</p>
+      </div>
+    </div>
+
+    <!-- Model 3 -->
+    <div onclick="openModal('tambal')" class="cursor-pointer shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
+      <img src="assets/Batik-Tambal.jpg" class="w-full h-64 object-cover object-[center_40%]">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-yellow-700">Batik Tambal</h3>
+        <p class="text-gray-600 text-sm mt-2">Melambangkan keragaman dan kebersamaan dalam kehidupan masyarakat.</p>
+      </div>
+    </div>
+
+    <!-- Model 4 -->
+    <div onclick="openModal('kawung')" class="cursor-pointer shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
+      <img src="assets/filosofi_batik_kawung.jpg" class="w-full h-64 object-cover object-[center_40%]">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-yellow-700">Batik Kawung</h3>
+        <p class="text-gray-600 text-sm mt-2">Melambangkan kekuasaan, kesucian, serta keseimbangan dalam hidup.</p>
+      </div>
+    </div>
+
+    <!-- Model 5 -->
+    <div onclick="openModal('lereng')" class="cursor-pointer shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
+      <img src="assets/Batik-lereng.jpg" class="w-full h-64 object-cover object-[center_40%]">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold text-yellow-700">Batik Lereng</h3>
+        <p class="text-gray-600 text-sm mt-2">Menggambarkan kemegahan dan keanggunan, terinspirasi oleh alam seperti gunung dan sungai.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="batikModal" class="hidden fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+  <div class="bg-white rounded-2xl shadow-lg max-w-lg w-full p-6 relative">
+    <!-- Tombol Back -->
+    <button onclick="closeModal()" class="absolute top-4 right-4 bg-yellow-600 text-white px-3 py-1 rounded-lg">Back</button>
+
+    <h2 id="modalTitle" class="text-2xl font-bold text-yellow-700 mb-4"></h2>
+    <img id="modalImage" src="" class="w-full h-64 object-cover rounded-xl mb-4">
+    <p id="modalDesc" class="text-gray-700"></p>
+  </div>
+</div>
+
+<script>
+  const batikData = {
+    mega: {
+      title: "Batik Mega Mendung",
+      img: "assets/Batik-Mega-Mendung.webp",
+      desc: `
+        <h3 class="font-semibold text-yellow-700 mt-2">📍 Asal</h3>
+        <p>Cirebon, Jawa Barat</p>
+
+        <h3 class="font-semibold text-yellow-700 mt-2">⏳ Masa</h3>
+        <p>Berkembang abad ke-16, dipengaruhi budaya Tiongkok melalui jalur perdagangan.</p>
+
+        <h3 class="font-semibold text-yellow-700 mt-2">🌸 Makna</h3>
+        <p>Melambangkan kesabaran, ketenangan, kebijaksanaan, serta harapan setelah badai.</p>
+      `
+    },
+    jagad: {
+      title: "Batik Sekar Jagad",
+      img: "assets/Batik-Sekar-Jagad.jpg",
+      desc: `
+        <h3 class="font-semibold text-yellow-700 mt-2">📍 Asal</h3>
+        <p>Yogyakarta & Solo, Jawa Tengah</p>
+
+        <h3 class="font-semibold text-yellow-700 mt-2">⏳ Masa</h3>
+        <p>Populer sejak abad ke-18 di lingkungan keraton Jawa.</p>
+
+        <h3 class="font-semibold text-yellow-700 mt-2">🌸 Makna</h3>
+        <p>Menggambarkan keindahan dunia, keragaman budaya, serta keseimbangan hidup.</p>
+      `
+    },
+    tambal: {
+      title: "Batik Tambal",
+      img: "assets/Batik-Tambal.jpg",
+      desc: `
+        <h3 class="font-semibold text-yellow-700 mt-2">📍 Asal</h3>
+        <p>Yogyakarta, Jawa Tengah</p>
+
+        <h3 class="font-semibold text-yellow-700 mt-2">⏳ Masa</h3>
+        <p>Dikenal sejak zaman Mataram Kuno.</p>
+
+        <h3 class="font-semibold text-yellow-700 mt-2">🌸 Makna</h3>
+        <p>Dipercaya memberi kekuatan penyembuhan, melambangkan perbaikan, harapan baru, dan kebersamaan.</p>
+      `
+    },
+    kawung: {
+      title: "Batik Kawung",
+      img: "assets/filosofi_batik_kawung.jpg",
+      desc: `
+        <h3 class="font-semibold text-yellow-700 mt-2">📍 Asal</h3>
+        <p>Yogyakarta, Jawa Tengah</p>
+
+        <h3 class="font-semibold text-yellow-700 mt-2">⏳ Masa</h3>
+        <p>Salah satu motif tertua di Jawa, ada sejak abad ke-13 (Mataram Kuno).</p>
+
+        <h3 class="font-semibold text-yellow-700 mt-2">🌸 Makna</h3>
+        <p>Melambangkan kesucian, keseimbangan, kekuasaan, serta pengendalian diri.</p>
+      `
+    },
+    lereng: {
+      title: "Batik Lereng",
+      img: "assets/Batik-lereng.jpg",
+      desc: `
+        <h3 class="font-semibold text-yellow-700 mt-2">📍 Asal</h3>
+        <p>Keraton Solo & Yogyakarta, Jawa Tengah</p>
+
+        <h3 class="font-semibold text-yellow-700 mt-2">⏳ Masa</h3>
+        <p>Berkembang sejak abad ke-16, masa Sultan Agung (Kerajaan Mataram).</p>
+
+        <h3 class="font-semibold text-yellow-700 mt-2">🌸 Makna</h3>
+        <p>Motif diagonal melambangkan kesinambungan hidup, perjuangan, dan semangat pantang menyerah.</p>
+      `
+    }
+  };
+
+  function openModal(key) {
+    const data = batikData[key];
+    document.getElementById("modalTitle").textContent = data.title;
+    document.getElementById("modalImage").src = data.img;
+    document.getElementById("modalDesc").innerHTML = data.desc; // pakai innerHTML biar h3 muncul
+    document.getElementById("batikModal").classList.remove("hidden");
+  }
+
+  function closeModal() {
+    document.getElementById("batikModal").classList.add("hidden");
+  }
+</script>
+
+
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-gray-300 py-8 mt-12">

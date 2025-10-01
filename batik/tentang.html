@@ -16,92 +16,84 @@
     }
   </style>
 </head>
-<body class="font-sans text-gray-800 bg-gradient-to-b from-white to-yellow-50">
+<body class="font-sans text-gray-800 bg-gradient-to-b from-yellow-50 via-white to-yellow-100">
 
- <!-- Navbar -->
-<nav class="bg-white shadow-md fixed w-full z-50">
-  <div class="container mx-auto flex justify-between items-center py-4 px-6">
-    <!-- Logo -->
-    <h1 class="text-2xl font-bold text-yellow-700">Batik Indonesia</h1>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-yellow-700">Batik Indonesia</h1>
+      <ul class="hidden md:flex space-x-6 text-lg">
+        <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
+        <li><a href="tentang.html" class="text-yellow-700 font-semibold">Tentang</a></li>
+        <li><a href="sejarah.html" class="hover:text-yellow-600">Sejarah</a></li>
+        <li><a href="galeri.html" class="hover:text-yellow-600">Galeri</a></li>
+        <li><a href="kontak.html" class="hover:text-yellow-600">SMK 5</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">☰</button>
+    </div>
+    <div id="menu" class="hidden md:hidden bg-white shadow-md">
+      <ul class="flex flex-col space-y-4 p-6 text-lg">
+        <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
+        <li><a href="tentang.html" class="text-yellow-700 font-semibold">Tentang</a></li>
+        <li><a href="sejarah.html" class="hover:text-yellow-600">Sejarah</a></li>
+        <li><a href="galeri.html" class="hover:text-yellow-600">Galeri</a></li>
+        <li><a href="kontak.html" class="hover:text-yellow-600">SMK 5</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Menu (desktop) -->
-    <ul class="hidden md:flex space-x-6 text-lg">
-      <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
-      <li><a href="tentang.html" class="hover:text-yellow-600">Tentang</a></li>
-      <li><a href="sejarah.html" class="hover:text-yellow-600">Sejarah</a></li>
-      <li><a href="galeri.html" class="hover:text-yellow-600">Galeri</a></li>
-      <li><a href="kontak.html" class="hover:text-yellow-600">SMK 5</a></li>
-    </ul>
-
-    <!-- Tombol hamburger (mobile) -->
-    <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
-      ☰
-    </button>
-  </div>
-
-  <!-- Menu (mobile) -->
-  <div id="menu" class="hidden md:hidden bg-white shadow-md">
-    <ul class="flex flex-col space-y-4 p-6 text-lg">
-      <li><a href="index.html" class="hover:text-yellow-600">Home</a></li>
-      <li><a href="tentang.html" class="hover:text-yellow-600">Tentang</a></li>
-      <li><a href="sejarah.html" class="hover:text-yellow-600">Sejarah</a></li>
-      <li><a href="galeri.html" class="hover:text-yellow-600">Galeri</a></li>
-      <li><a href="kontak.html" class="hover:text-yellow-600">SMK 5</a></li>
-    </ul>
-  </div>
-</nav>
-
-  <!-- Tentang Batik Indonesia -->
-  <section class="container mx-auto py-24 px-6">
-    <h2 class="text-4xl font-bold text-center text-gray-900 mb-8">Tentang Batik Indonesia</h2>
+  <!-- Tentang Batik -->
+  <section class="container mx-auto py-28 px-6">
+    <h2 class="text-4xl font-bold text-center text-yellow-800 mb-6">Tentang Batik Indonesia</h2>
     <p class="text-lg text-gray-700 leading-relaxed text-center max-w-3xl mx-auto mb-16">
-      Batik Indonesia adalah warisan budaya bangsa yang sarat makna dan filosofi. 
-      Setiap motif batik memiliki cerita unik dan menjadi simbol nilai kehidupan masyarakat.
+      Batik Indonesia adalah <span class="font-semibold text-yellow-700">warisan budaya bangsa</span> yang diakui dunia. 
+      Setiap motif memiliki filosofi, sejarah, dan nilai kehidupan yang mendalam, menjadikannya lebih dari sekadar kain hias.
     </p>
 
-    <div class="space-y-10 max-w-4xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+      
       <!-- Mega Mendung -->
-      <div class="fade-in border-l-4 border-yellow-600 pl-4">
-        <h3 class="text-2xl font-semibold text-yellow-700">Batik Mega Mendung</h3>
+      <div class="fade-in bg-white shadow-lg rounded-xl p-6 hover:scale-[1.02] transition">
+        <h3 class="text-2xl font-semibold text-yellow-700 flex items-center gap-2">☁️ Batik Mega Mendung</h3>
         <p class="text-gray-700 mt-2">
           Berasal dari Cirebon dengan motif awan biru. 
-          Melambangkan kesabaran, ketenangan, dan kebesaran jiwa dalam menghadapi kehidupan.
+          Melambangkan <span class="font-medium">kesabaran, ketenangan, dan kebesaran jiwa</span> dalam menghadapi kehidupan.
         </p>
       </div>
 
       <!-- Sekar Jagad -->
-      <div class="fade-in border-l-4 border-yellow-600 pl-4">
-        <h3 class="text-2xl font-semibold text-yellow-700">Batik Sekar Jagad</h3>
+      <div class="fade-in bg-white shadow-lg rounded-xl p-6 hover:scale-[1.02] transition">
+        <h3 class="text-2xl font-semibold text-yellow-700 flex items-center gap-2">🌍 Batik Sekar Jagad</h3>
         <p class="text-gray-700 mt-2">
           Dari Yogyakarta & Solo, motifnya menyerupai peta dunia. 
-          Simbol keindahan, keragaman, serta persatuan dalam perbedaan.
+          Simbol <span class="font-medium">keindahan, keragaman, serta persatuan dalam perbedaan</span>.
         </p>
       </div>
 
       <!-- Tambal -->
-      <div class="fade-in border-l-4 border-yellow-600 pl-4">
-        <h3 class="text-2xl font-semibold text-yellow-700">Batik Tambal</h3>
+      <div class="fade-in bg-white shadow-lg rounded-xl p-6 hover:scale-[1.02] transition">
+        <h3 class="text-2xl font-semibold text-yellow-700 flex items-center gap-2">🧩 Batik Tambal</h3>
         <p class="text-gray-700 mt-2">
-          Bermotif tambalan berbagai bentuk. Melambangkan harapan, semangat memperbaiki kehidupan, 
+          Bermotif tambalan berbagai bentuk. Melambangkan <span class="font-medium">harapan, semangat memperbaiki kehidupan</span>, 
           serta memberi energi positif.
         </p>
       </div>
 
       <!-- Kawung -->
-      <div class="fade-in border-l-4 border-yellow-600 pl-4">
-        <h3 class="text-2xl font-semibold text-yellow-700">Batik Kawung</h3>
+      <div class="fade-in bg-white shadow-lg rounded-xl p-6 hover:scale-[1.02] transition">
+        <h3 class="text-2xl font-semibold text-yellow-700 flex items-center gap-2">⭕ Batik Kawung</h3>
         <p class="text-gray-700 mt-2">
-          Motif bulatan mirip buah aren. Simbol kesucian, keseimbangan, keadilan, dan kebijaksanaan, 
-          dulu sering dipakai oleh kalangan bangsawan.
+          Motif bulatan mirip buah aren. Simbol <span class="font-medium">kesucian, keseimbangan, dan kebijaksanaan</span>, 
+          dahulu hanya digunakan oleh bangsawan.
         </p>
       </div>
 
       <!-- Lereng -->
-      <div class="fade-in border-l-4 border-yellow-600 pl-4">
-        <h3 class="text-2xl font-semibold text-yellow-700">Batik Lereng</h3>
+      <div class="fade-in bg-white shadow-lg rounded-xl p-6 hover:scale-[1.02] transition md:col-span-2">
+        <h3 class="text-2xl font-semibold text-yellow-700 flex items-center gap-2">⛰️ Batik Lereng</h3>
         <p class="text-gray-700 mt-2">
           Motif garis miring berulang menyerupai lereng gunung. 
-          Melambangkan keteguhan, keuletan, serta perjuangan tanpa henti.
+          Melambangkan <span class="font-medium">keteguhan, keuletan, serta perjuangan tanpa henti</span>.
         </p>
       </div>
     </div>
@@ -113,6 +105,8 @@
       <p>&copy; 2025 Pameran Batik Indonesia. All rights reserved.</p>
     </div>
   </footer>
+
+  
 
 </body>
 </html>
